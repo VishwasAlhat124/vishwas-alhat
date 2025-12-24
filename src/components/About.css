@@ -1,0 +1,99 @@
+/* About Section */
+.about {
+  background-color: var(--surface);
+  padding-bottom: 10px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-text {
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+/* All paragraphs in .about-text should share the same styling. */
+.about-text p {
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.highlight {
+  background-color: var(--white);
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(12,18,30,0.06);
+}
+
+.highlight h4 {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  margin-bottom: 0.4rem;
+}
+
+.highlight p {
+  color: var(--text-light);
+  margin: 0;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.about-photo {
+  width: 100%;
+  max-width: 420px;
+  height: 520px;
+  border-radius: 15px;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 6px 18px rgba(12,18,30,0.06);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    max-width: 280px;
+    height: 400px;
+  }
+}
