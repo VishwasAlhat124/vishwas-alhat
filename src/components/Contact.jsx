@@ -47,7 +47,7 @@ export default function Contact() {
               <div className="social-links">
                 <a href="https://www.linkedin.com/in/vishwas-alhat-037926243" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://github.com/VishwasAlhat124" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a className="btn btn-secondary" href="src\assets\VISHWAS_ALHAT_RESUME.pdf" download style={{marginLeft: '8px'}}>Download CV</a>
+                <a className="btn btn-secondary" href="public\VISHWAS_ALHAT_RESUME.pdf" download style={{marginLeft: '8px'}}>Download CV</a>
               </div>
             </div>
           </div>
