@@ -23,7 +23,7 @@ export default function Header() {
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a className="btn btn-primary" href="public\VISHWAS_ALHAT_RESUME.pdf" download>Download CV</a></li>
+            <li><a className="btn btn-primary" href={`${import.meta.env.BASE_URL}VISHWAS_ALHAT_RESUME.pdf`} download>Download CV</a></li>
           </ul>
         </nav>
       </div>
